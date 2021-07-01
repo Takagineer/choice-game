@@ -32,6 +32,7 @@
 
   function setQuiz() {
     question.textContent = quizSet[currentNum].q;
+
     const shuffledChoices = shuffle([...quizSet[currentNum].c]);
     shuffledChoices.forEach((choice) => {
       const li = document.createElement("li");
